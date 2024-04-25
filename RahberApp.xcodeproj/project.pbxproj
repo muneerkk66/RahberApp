@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0856ED9D2BDA8936005146FC /* RahberAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856ED9C2BDA8936005146FC /* RahberAppApp.swift */; };
+		0856ED9F2BDA8936005146FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856ED9E2BDA8936005146FC /* ContentView.swift */; };
+		0856EDA12BDA8937005146FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0856EDA02BDA8937005146FC /* Assets.xcassets */; };
+		0856EDA42BDA8937005146FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0856EDA32BDA8937005146FC /* Preview Assets.xcassets */; };
+		0856EDAE2BDA8937005146FC /* RahberAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDAD2BDA8937005146FC /* RahberAppTests.swift */; };
+		0856EDB82BDA8937005146FC /* RahberAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDB72BDA8937005146FC /* RahberAppUITests.swift */; };
+		0856EDBA2BDA8937005146FC /* RahberAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDB92BDA8937005146FC /* RahberAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0856EDAA2BDA8937005146FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0856ED912BDA8936005146FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0856ED982BDA8936005146FC;
+			remoteInfo = RahberApp;
+		};
+		0856EDB42BDA8937005146FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0856ED912BDA8936005146FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0856ED982BDA8936005146FC;
+			remoteInfo = RahberApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0856ED992BDA8936005146FC /* RahberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RahberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0856ED9C2BDA8936005146FC /* RahberAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RahberAppApp.swift; sourceTree = "<group>"; };
+		0856ED9E2BDA8936005146FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0856EDA02BDA8937005146FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0856EDA32BDA8937005146FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0856EDA92BDA8937005146FC /* RahberAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RahberAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0856EDAD2BDA8937005146FC /* RahberAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RahberAppTests.swift; sourceTree = "<group>"; };
+		0856EDB32BDA8937005146FC /* RahberAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RahberAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0856EDB72BDA8937005146FC /* RahberAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RahberAppUITests.swift; sourceTree = "<group>"; };
+		0856EDB92BDA8937005146FC /* RahberAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RahberAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0856ED962BDA8936005146FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0856EDA62BDA8937005146FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0856EDB02BDA8937005146FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0856ED902BDA8935005146FC = {
+			isa = PBXGroup;
+			children = (
+				0856ED9B2BDA8936005146FC /* RahberApp */,
+				0856EDAC2BDA8937005146FC /* RahberAppTests */,
+				0856EDB62BDA8937005146FC /* RahberAppUITests */,
+				0856ED9A2BDA8936005146FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0856ED9A2BDA8936005146FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0856ED992BDA8936005146FC /* RahberApp.app */,
+				0856EDA92BDA8937005146FC /* RahberAppTests.xctest */,
+				0856EDB32BDA8937005146FC /* RahberAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0856ED9B2BDA8936005146FC /* RahberApp */ = {
+			isa = PBXGroup;
+			children = (
+				0856ED9C2BDA8936005146FC /* RahberAppApp.swift */,
+				0856ED9E2BDA8936005146FC /* ContentView.swift */,
+				0856EDA02BDA8937005146FC /* Assets.xcassets */,
+				0856EDA22BDA8937005146FC /* Preview Content */,
+			);
+			path = RahberApp;
+			sourceTree = "<group>";
+		};
+		0856EDA22BDA8937005146FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDA32BDA8937005146FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0856EDAC2BDA8937005146FC /* RahberAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDAD2BDA8937005146FC /* RahberAppTests.swift */,
+			);
+			path = RahberAppTests;
+			sourceTree = "<group>";
+		};
+		0856EDB62BDA8937005146FC /* RahberAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDB72BDA8937005146FC /* RahberAppUITests.swift */,
+				0856EDB92BDA8937005146FC /* RahberAppUITestsLaunchTests.swift */,
+			);
+			path = RahberAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0856ED982BDA8936005146FC /* RahberApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0856EDBD2BDA8937005146FC /* Build configuration list for PBXNativeTarget "RahberApp" */;
+			buildPhases = (
+				0856ED952BDA8936005146FC /* Sources */,
+				0856ED962BDA8936005146FC /* Frameworks */,
+				0856ED972BDA8936005146FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RahberApp;
+			productName = RahberApp;
+			productReference = 0856ED992BDA8936005146FC /* RahberApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0856EDA82BDA8937005146FC /* RahberAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0856EDC02BDA8937005146FC /* Build configuration list for PBXNativeTarget "RahberAppTests" */;
+			buildPhases = (
+				0856EDA52BDA8937005146FC /* Sources */,
+				0856EDA62BDA8937005146FC /* Frameworks */,
+				0856EDA72BDA8937005146FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0856EDAB2BDA8937005146FC /* PBXTargetDependency */,
+			);
+			name = RahberAppTests;
+			productName = RahberAppTests;
+			productReference = 0856EDA92BDA8937005146FC /* RahberAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0856EDB22BDA8937005146FC /* RahberAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0856EDC32BDA8937005146FC /* Build configuration list for PBXNativeTarget "RahberAppUITests" */;
+			buildPhases = (
+				0856EDAF2BDA8937005146FC /* Sources */,
+				0856EDB02BDA8937005146FC /* Frameworks */,
+				0856EDB12BDA8937005146FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0856EDB52BDA8937005146FC /* PBXTargetDependency */,
+			);
+			name = RahberAppUITests;
+			productName = RahberAppUITests;
+			productReference = 0856EDB32BDA8937005146FC /* RahberAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0856ED912BDA8936005146FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					0856ED982BDA8936005146FC = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					0856EDA82BDA8937005146FC = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 0856ED982BDA8936005146FC;
+					};
+					0856EDB22BDA8937005146FC = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 0856ED982BDA8936005146FC;
+					};
+				};
+			};
+			buildConfigurationList = 0856ED942BDA8936005146FC /* Build configuration list for PBXProject "RahberApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0856ED902BDA8935005146FC;
+			productRefGroup = 0856ED9A2BDA8936005146FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0856ED982BDA8936005146FC /* RahberApp */,
+				0856EDA82BDA8937005146FC /* RahberAppTests */,
+				0856EDB22BDA8937005146FC /* RahberAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0856ED972BDA8936005146FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0856EDA42BDA8937005146FC /* Preview Assets.xcassets in Resources */,
+				0856EDA12BDA8937005146FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0856EDA72BDA8937005146FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0856EDB12BDA8937005146FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0856ED952BDA8936005146FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0856ED9F2BDA8936005146FC /* ContentView.swift in Sources */,
+				0856ED9D2BDA8936005146FC /* RahberAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0856EDA52BDA8937005146FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0856EDAE2BDA8937005146FC /* RahberAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0856EDAF2BDA8937005146FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0856EDBA2BDA8937005146FC /* RahberAppUITestsLaunchTests.swift in Sources */,
+				0856EDB82BDA8937005146FC /* RahberAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0856EDAB2BDA8937005146FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0856ED982BDA8936005146FC /* RahberApp */;
+			targetProxy = 0856EDAA2BDA8937005146FC /* PBXContainerItemProxy */;
+		};
+		0856EDB52BDA8937005146FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0856ED982BDA8936005146FC /* RahberApp */;
+			targetProxy = 0856EDB42BDA8937005146FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0856EDBB2BDA8937005146FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0856EDBC2BDA8937005146FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0856EDBE2BDA8937005146FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RahberApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muneer.RahberApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0856EDBF2BDA8937005146FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RahberApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muneer.RahberApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0856EDC12BDA8937005146FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muneer.RahberAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RahberApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RahberApp";
+			};
+			name = Debug;
+		};
+		0856EDC22BDA8937005146FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muneer.RahberAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RahberApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RahberApp";
+			};
+			name = Release;
+		};
+		0856EDC42BDA8937005146FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muneer.RahberAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RahberApp;
+			};
+			name = Debug;
+		};
+		0856EDC52BDA8937005146FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.muneer.RahberAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RahberApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0856ED942BDA8936005146FC /* Build configuration list for PBXProject "RahberApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0856EDBB2BDA8937005146FC /* Debug */,
+				0856EDBC2BDA8937005146FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0856EDBD2BDA8937005146FC /* Build configuration list for PBXNativeTarget "RahberApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0856EDBE2BDA8937005146FC /* Debug */,
+				0856EDBF2BDA8937005146FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0856EDC02BDA8937005146FC /* Build configuration list for PBXNativeTarget "RahberAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0856EDC12BDA8937005146FC /* Debug */,
+				0856EDC22BDA8937005146FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0856EDC32BDA8937005146FC /* Build configuration list for PBXNativeTarget "RahberAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0856EDC42BDA8937005146FC /* Debug */,
+				0856EDC52BDA8937005146FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0856ED912BDA8936005146FC /* Project object */;
+}
