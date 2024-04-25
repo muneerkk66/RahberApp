@@ -8,7 +8,6 @@
 import Combine
 
 protocol APIClient {
-	@discardableResult
-	func request<T: Decodable>() -> AnyPublisher<T, APIError>
+    @discardableResult
+    func request<T: Decodable>() -> AnyPublisher<T, APIError>
 }
-

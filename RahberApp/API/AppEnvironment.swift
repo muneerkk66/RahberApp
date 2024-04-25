@@ -10,19 +10,18 @@
 
 import Foundation
 enum AppEnvironment: String, Codable, CaseIterable {
-	case development = "dev"
-	case qa
-	case production = "prod"
+    case development = "dev"
+    case qa
+    case production = "prod"
 }
 
 // Update environment variables based on the json file.
 extension AppEnvironment {
-	var jsonFile: String {
-		switch self {
-		case .development, .production, .qa:
-			// For all environments, use the same mockPointsStatement JSON file. this will update based on the actual API end point
-			return "mockData"
-		}
-	}
+    var jsonFile: String {
+        switch self {
+        case .development, .production, .qa:
+            // For all environments, use the same mockPointsStatement JSON file. this will update based on the actual API end point
+            return "mockData"
+        }
+    }
 }
-

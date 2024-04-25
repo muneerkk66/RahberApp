@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0856ED9D2BDA8936005146FC /* RahberAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856ED9C2BDA8936005146FC /* RahberAppApp.swift */; };
-		0856ED9F2BDA8936005146FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856ED9E2BDA8936005146FC /* ContentView.swift */; };
 		0856EDA12BDA8937005146FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0856EDA02BDA8937005146FC /* Assets.xcassets */; };
 		0856EDA42BDA8937005146FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0856EDA32BDA8937005146FC /* Preview Assets.xcassets */; };
 		0856EDAE2BDA8937005146FC /* RahberAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDAD2BDA8937005146FC /* RahberAppTests.swift */; };
@@ -23,6 +22,30 @@
 		0856EDE12BDA8C60005146FC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDE02BDA8C60005146FC /* APIClient.swift */; };
 		0856EDE32BDA8C98005146FC /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0856EDE22BDA8C98005146FC /* mockData.json */; };
 		0856EDE62BDA8D3A005146FC /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0856EDE52BDA8D3A005146FC /* SnapshotTesting */; };
+		0856EDE92BDA8E69005146FC /* CourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDE82BDA8E69005146FC /* CourseService.swift */; };
+		0856EDEB2BDA8E8E005146FC /* CourseService+Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDEA2BDA8E8E005146FC /* CourseService+Live.swift */; };
+		0856EDED2BDA8F1B005146FC /* CoursesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDEC2BDA8F1B005146FC /* CoursesResponse.swift */; };
+		0856EDEF2BDA9425005146FC /* CourseRepository+Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDEE2BDA9425005146FC /* CourseRepository+Live.swift */; };
+		0856EDF22BDA94D8005146FC /* CoursesLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDF12BDA94D8005146FC /* CoursesLocalDataSource.swift */; };
+		0856EDF92BDA9581005146FC /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDF52BDA9581005146FC /* RealmProvider.swift */; };
+		0856EDFA2BDA9581005146FC /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDF72BDA9581005146FC /* CourseModel.swift */; };
+		0856EDFB2BDA9581005146FC /* CourseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDF82BDA9581005146FC /* CourseListModel.swift */; };
+		0856EDFE2BDA9BF6005146FC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 0856EDFD2BDA9BF6005146FC /* Realm */; };
+		0856EE002BDA9BF6005146FC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0856EDFF2BDA9BF6005146FC /* RealmSwift */; };
+		0856EE022BDA9D0C005146FC /* CourseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE012BDA9D0C005146FC /* CourseRepository.swift */; };
+		0856EE042BDAAE8F005146FC /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE032BDAAE8F005146FC /* CourseList.swift */; };
+		0856EE062BDAAED7005146FC /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE052BDAAED7005146FC /* Course.swift */; };
+		0856EE082BDAB083005146FC /* Course+DomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE072BDAB083005146FC /* Course+DomainMapper.swift */; };
+		0856EE0A2BDAB46C005146FC /* FetchAllCoursesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE092BDAB46C005146FC /* FetchAllCoursesUseCase.swift */; };
+		0856EE132BDAB545005146FC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE122BDAB545005146FC /* HomeView.swift */; };
+		0856EE152BDAB550005146FC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE142BDAB550005146FC /* HomeViewModel.swift */; };
+		0856EE1B2BDAB5A2005146FC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE172BDAB5A2005146FC /* Coordinator.swift */; };
+		0856EE1C2BDAB5A2005146FC /* AppCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE182BDAB5A2005146FC /* AppCoordinatorView.swift */; };
+		0856EE1D2BDAB5A2005146FC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE192BDAB5A2005146FC /* AppCoordinator.swift */; };
+		0856EE1E2BDAB5A2005146FC /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE1A2BDAB5A2005146FC /* Routable.swift */; };
+		0856EE222BDAB603005146FC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE1F2BDAB603005146FC /* HomeCoordinator.swift */; };
+		0856EE232BDAB603005146FC /* HomeCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE202BDAB603005146FC /* HomeCoordinatorProtocol.swift */; };
+		0856EE242BDAB603005146FC /* HomeCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE212BDAB603005146FC /* HomeCoordinatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +68,6 @@
 /* Begin PBXFileReference section */
 		0856ED992BDA8936005146FC /* RahberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RahberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0856ED9C2BDA8936005146FC /* RahberAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RahberAppApp.swift; sourceTree = "<group>"; };
-		0856ED9E2BDA8936005146FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0856EDA02BDA8937005146FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0856EDA32BDA8937005146FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0856EDA92BDA8937005146FC /* RahberAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RahberAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +83,28 @@
 		0856EDDE2BDA8C4C005146FC /* APIClientLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientLive.swift; sourceTree = "<group>"; };
 		0856EDE02BDA8C60005146FC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		0856EDE22BDA8C98005146FC /* mockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockData.json; sourceTree = "<group>"; };
+		0856EDE82BDA8E69005146FC /* CourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseService.swift; sourceTree = "<group>"; };
+		0856EDEA2BDA8E8E005146FC /* CourseService+Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseService+Live.swift"; sourceTree = "<group>"; };
+		0856EDEC2BDA8F1B005146FC /* CoursesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesResponse.swift; sourceTree = "<group>"; };
+		0856EDEE2BDA9425005146FC /* CourseRepository+Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseRepository+Live.swift"; sourceTree = "<group>"; };
+		0856EDF12BDA94D8005146FC /* CoursesLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesLocalDataSource.swift; sourceTree = "<group>"; };
+		0856EDF52BDA9581005146FC /* RealmProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		0856EDF72BDA9581005146FC /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		0856EDF82BDA9581005146FC /* CourseListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseListModel.swift; sourceTree = "<group>"; };
+		0856EE012BDA9D0C005146FC /* CourseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRepository.swift; sourceTree = "<group>"; };
+		0856EE032BDAAE8F005146FC /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		0856EE052BDAAED7005146FC /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		0856EE072BDAB083005146FC /* Course+DomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+DomainMapper.swift"; sourceTree = "<group>"; };
+		0856EE092BDAB46C005146FC /* FetchAllCoursesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAllCoursesUseCase.swift; sourceTree = "<group>"; };
+		0856EE122BDAB545005146FC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0856EE142BDAB550005146FC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0856EE172BDAB5A2005146FC /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0856EE182BDAB5A2005146FC /* AppCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinatorView.swift; sourceTree = "<group>"; };
+		0856EE192BDAB5A2005146FC /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0856EE1A2BDAB5A2005146FC /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		0856EE1F2BDAB603005146FC /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		0856EE202BDAB603005146FC /* HomeCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		0856EE212BDAB603005146FC /* HomeCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0856EE002BDA9BF6005146FC /* RealmSwift in Frameworks */,
+				0856EDFE2BDA9BF6005146FC /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +166,6 @@
 				0856EDD42BDA8B7C005146FC /* Resources */,
 				0856EDD52BDA8B83005146FC /* Utils */,
 				0856ED9C2BDA8936005146FC /* RahberAppApp.swift */,
-				0856ED9E2BDA8936005146FC /* ContentView.swift */,
 				0856EDA02BDA8937005146FC /* Assets.xcassets */,
 				0856EDA22BDA8937005146FC /* Preview Content */,
 			);
@@ -171,6 +216,8 @@
 		0856EDCA2BDA8AF7005146FC /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0856EDF32BDA9581005146FC /* Persistence */,
+				0856EDF02BDA94B6005146FC /* DataSources */,
 				0856EDCD2BDA8B1C005146FC /* Repositories */,
 				0856EDCC2BDA8B0A005146FC /* Network */,
 				0856EDCB2BDA8AFC005146FC /* Mapper */,
@@ -181,6 +228,8 @@
 		0856EDCB2BDA8AFC005146FC /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				0856EDEC2BDA8F1B005146FC /* CoursesResponse.swift */,
+				0856EE072BDAB083005146FC /* Course+DomainMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -188,6 +237,8 @@
 		0856EDCC2BDA8B0A005146FC /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				0856EDE82BDA8E69005146FC /* CourseService.swift */,
+				0856EDEA2BDA8E8E005146FC /* CourseService+Live.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -195,6 +246,7 @@
 		0856EDCD2BDA8B1C005146FC /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				0856EDEE2BDA9425005146FC /* CourseRepository+Live.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -212,6 +264,7 @@
 		0856EDCF2BDA8B38005146FC /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				0856EE012BDA9D0C005146FC /* CourseRepository.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -219,6 +272,8 @@
 		0856EDD02BDA8B41005146FC /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				0856EE032BDAAE8F005146FC /* CourseList.swift */,
+				0856EE052BDAAED7005146FC /* Course.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -226,6 +281,7 @@
 		0856EDD12BDA8B50005146FC /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				0856EE092BDAB46C005146FC /* FetchAllCoursesUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -233,6 +289,8 @@
 		0856EDD22BDA8B64005146FC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0856EE162BDAB577005146FC /* AppCoordinator */,
+				0856EE0B2BDAB4CC005146FC /* Screens */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -265,6 +323,103 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		0856EDF02BDA94B6005146FC /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDF12BDA94D8005146FC /* CoursesLocalDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		0856EDF32BDA9581005146FC /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDF42BDA9581005146FC /* Realm */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		0856EDF42BDA9581005146FC /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDF52BDA9581005146FC /* RealmProvider.swift */,
+				0856EDF62BDA9581005146FC /* Model */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		0856EDF62BDA9581005146FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDF72BDA9581005146FC /* CourseModel.swift */,
+				0856EDF82BDA9581005146FC /* CourseListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0856EE0B2BDAB4CC005146FC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE0D2BDAB4DE005146FC /* CourseDetailView */,
+				0856EE0C2BDAB4D7005146FC /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0856EE0C2BDAB4D7005146FC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE102BDAB51D005146FC /* Coordinator */,
+				0856EE0F2BDAB516005146FC /* ViewModel */,
+				0856EE0E2BDAB510005146FC /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0856EE0D2BDAB4DE005146FC /* CourseDetailView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CourseDetailView;
+			sourceTree = "<group>";
+		};
+		0856EE0E2BDAB510005146FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE122BDAB545005146FC /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0856EE0F2BDAB516005146FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE142BDAB550005146FC /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0856EE102BDAB51D005146FC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE1F2BDAB603005146FC /* HomeCoordinator.swift */,
+				0856EE202BDAB603005146FC /* HomeCoordinatorProtocol.swift */,
+				0856EE212BDAB603005146FC /* HomeCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0856EE162BDAB577005146FC /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE192BDAB5A2005146FC /* AppCoordinator.swift */,
+				0856EE182BDAB5A2005146FC /* AppCoordinatorView.swift */,
+				0856EE172BDAB5A2005146FC /* Coordinator.swift */,
+				0856EE1A2BDAB5A2005146FC /* Routable.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,6 +436,10 @@
 			dependencies = (
 			);
 			name = RahberApp;
+			packageProductDependencies = (
+				0856EDFD2BDA9BF6005146FC /* Realm */,
+				0856EDFF2BDA9BF6005146FC /* RealmSwift */,
+			);
 			productName = RahberApp;
 			productReference = 0856ED992BDA8936005146FC /* RahberApp.app */;
 			productType = "com.apple.product-type.application";
@@ -359,6 +518,7 @@
 			packageReferences = (
 				0856EDE42BDA8D3A005146FC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 				0856EDE72BDA8D4E005146FC /* XCRemoteSwiftPackageReference "Swinject" */,
+				0856EDFC2BDA9620005146FC /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 0856ED9A2BDA8936005146FC /* Products */;
 			projectDirPath = "";
@@ -405,13 +565,34 @@
 			files = (
 				0856EDDD2BDA8C33005146FC /* AppEnvironment.swift in Sources */,
 				0856EDC92BDA8AC6005146FC /* Resolver.swift in Sources */,
-				0856ED9F2BDA8936005146FC /* ContentView.swift in Sources */,
+				0856EDF22BDA94D8005146FC /* CoursesLocalDataSource.swift in Sources */,
+				0856EE222BDAB603005146FC /* HomeCoordinator.swift in Sources */,
+				0856EE232BDAB603005146FC /* HomeCoordinatorProtocol.swift in Sources */,
+				0856EE082BDAB083005146FC /* Course+DomainMapper.swift in Sources */,
 				0856EDD92BDA8BD6005146FC /* Parser.swift in Sources */,
+				0856EE1D2BDAB5A2005146FC /* AppCoordinator.swift in Sources */,
+				0856EDEF2BDA9425005146FC /* CourseRepository+Live.swift in Sources */,
 				0856ED9D2BDA8936005146FC /* RahberAppApp.swift in Sources */,
 				0856EDD72BDA8BBF005146FC /* Logger.swift in Sources */,
+				0856EDEB2BDA8E8E005146FC /* CourseService+Live.swift in Sources */,
+				0856EE242BDAB603005146FC /* HomeCoordinatorView.swift in Sources */,
+				0856EDED2BDA8F1B005146FC /* CoursesResponse.swift in Sources */,
+				0856EE062BDAAED7005146FC /* Course.swift in Sources */,
+				0856EE042BDAAE8F005146FC /* CourseList.swift in Sources */,
 				0856EDDB2BDA8C07005146FC /* APIError.swift in Sources */,
+				0856EE1E2BDAB5A2005146FC /* Routable.swift in Sources */,
 				0856EDDF2BDA8C4C005146FC /* APIClientLive.swift in Sources */,
+				0856EDE92BDA8E69005146FC /* CourseService.swift in Sources */,
 				0856EDE12BDA8C60005146FC /* APIClient.swift in Sources */,
+				0856EDFA2BDA9581005146FC /* CourseModel.swift in Sources */,
+				0856EDF92BDA9581005146FC /* RealmProvider.swift in Sources */,
+				0856EE152BDAB550005146FC /* HomeViewModel.swift in Sources */,
+				0856EE022BDA9D0C005146FC /* CourseRepository.swift in Sources */,
+				0856EDFB2BDA9581005146FC /* CourseListModel.swift in Sources */,
+				0856EE1B2BDAB5A2005146FC /* Coordinator.swift in Sources */,
+				0856EE132BDAB545005146FC /* HomeView.swift in Sources */,
+				0856EE0A2BDAB46C005146FC /* FetchAllCoursesUseCase.swift in Sources */,
+				0856EE1C2BDAB5A2005146FC /* AppCoordinatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +934,14 @@
 				minimumVersion = 2.8.7;
 			};
 		};
+		0856EDFC2BDA9620005146FC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -760,6 +949,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0856EDE42BDA8D3A005146FC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
+		};
+		0856EDFD2BDA9BF6005146FC /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0856EDFC2BDA9620005146FC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		0856EDFF2BDA9BF6005146FC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0856EDFC2BDA9620005146FC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
