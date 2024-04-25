@@ -13,6 +13,14 @@ struct HomeView: View {
     var body: some View {
         sceneView.onAppear {
             viewModel.handle(.loadAllCourses)
+        }.toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    // viewModel.handle(.onTapSorting)
+                } label: {
+                    Image(systemName: "person").resizable() .foregroundColor(.primaryGreen).frame(width: 20, height: 20)
+                }
+            }
         }
     }
 

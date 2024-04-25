@@ -9,7 +9,7 @@ import Foundation
 
 extension CourseResponse {
     func toGeneralCourseDomain() -> Course {
-        return Course(id: self.courseId, name: self.name, duration: self.duration, imageUrl: self.url)
+        return Course(id: self.courseId, name: self.name, duration: self.duration, imageUrl: self.url, tag: self.tag, lessonsCount: self.lessons.count)
     }
 
 }

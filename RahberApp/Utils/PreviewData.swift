@@ -9,6 +9,6 @@ import Foundation
 
 struct PreviewData {
 
-    static let course = Course(id: 123, name: "1213", duration: "2:00 hr", imageUrl: "https://picsum.photos/id/1/200/200")
+    static let course = Course(id: 123, name: "iOS App Development", duration: "2:00 hr", imageUrl: "https://picsum.photos/id/1/500/500", tag: "Free", lessonsCount: 2)
 
 }

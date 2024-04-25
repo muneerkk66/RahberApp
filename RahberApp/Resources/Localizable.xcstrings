@@ -25,6 +25,18 @@
         }
       }
     },
+    "course.lessons" : {
+      "comment" : "Lessons Count",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lessons"
+          }
+        }
+      }
+    },
     "Hello, World!" : {
 
     },

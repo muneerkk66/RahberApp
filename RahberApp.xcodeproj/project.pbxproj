@@ -57,6 +57,7 @@
 		0856EE392BDAC086005146FC /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE382BDAC086005146FC /* CourseListView.swift */; };
 		0856EE3B2BDAC49D005146FC /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE3A2BDAC49D005146FC /* CourseDetailView.swift */; };
 		0856EE3D2BDAC954005146FC /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 0856EE3C2BDAC954005146FC /* Swinject */; };
+		0856EE3F2BDAE8B7005146FC /* CapsuleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE3E2BDAE8B7005146FC /* CapsuleText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		0856EE362BDABFDB005146FC /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		0856EE382BDAC086005146FC /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 		0856EE3A2BDAC49D005146FC /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
+		0856EE3E2BDAE8B7005146FC /* CapsuleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,6 +456,7 @@
 			isa = PBXGroup;
 			children = (
 				0856EE282BDABBFD005146FC /* ErrorView.swift */,
+				0856EE3E2BDAE8B7005146FC /* CapsuleText.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"en-GB",
 			);
 			mainGroup = 0856ED902BDA8935005146FC;
 			packageReferences = (
@@ -640,6 +644,7 @@
 				0856EDDF2BDA8C4C005146FC /* APIClientLive.swift in Sources */,
 				0856EDE92BDA8E69005146FC /* CourseService.swift in Sources */,
 				0856EDE12BDA8C60005146FC /* APIClient.swift in Sources */,
+				0856EE3F2BDAE8B7005146FC /* CapsuleText.swift in Sources */,
 				0856EDFA2BDA9581005146FC /* CourseModel.swift in Sources */,
 				0856EDF92BDA9581005146FC /* RealmProvider.swift in Sources */,
 				0856EE152BDAB550005146FC /* HomeViewModel.swift in Sources */,

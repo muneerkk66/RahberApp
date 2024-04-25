@@ -19,4 +19,11 @@ public struct CourseResponse: Decodable {
     var name: String
     var url: String
     var duration: String
+    var tag: String
+    var description: String
+    var lessons: [Lesson]
+}
+
+public struct Lesson: Decodable {
+    var title: String
 }

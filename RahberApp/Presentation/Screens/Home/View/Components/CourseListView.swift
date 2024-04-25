@@ -14,9 +14,8 @@ struct CourseListView: View {
     var body: some View {
         GeometryReader { _ in
             ScrollView {
-                Spacer(minLength: Dimensions.space80)
 
-                LazyVStack(alignment: .leading) {
+                LazyVStack(alignment: .leading, spacing: Dimensions.space20) {
                     ForEach(viewModel.courseList?.general ?? []) { course in
                         CourseView(course: course)
                             .onTapGesture {
@@ -28,7 +27,7 @@ struct CourseListView: View {
             .scrollContentBackground(.hidden)
             .background(Color(UIColor.secondarySystemBackground))
         }
-        .edgesIgnoringSafeArea(.all)
+
     }
 }
 

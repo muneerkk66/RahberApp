@@ -69,5 +69,5 @@ struct Dimensions {
     static let space120: CGFloat = 120
 
     // CardView
-    static let cardViewHight: CGFloat = 200
+    static let cardViewHight: CGFloat = 300
 }

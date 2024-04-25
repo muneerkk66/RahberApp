@@ -15,6 +15,15 @@ struct HomeCoordinatorView: View {
             HomeView()
                 .navigationDestination(for: HomeCoordinator.Screen.self) {
                     destination($0)
+                }.navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        Image(.logo)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: Dimensions.space30)
+                            .clipped()
+                    }
                 }
         }
     }
