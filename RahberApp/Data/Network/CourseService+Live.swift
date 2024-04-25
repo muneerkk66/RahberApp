@@ -16,7 +16,7 @@ final class CourseServiceLive {
 }
 
 extension CourseServiceLive: CourseService {
-    func fetchStatement(
+    func fetchAllCourses(
     ) -> AnyPublisher<CoursesResponse, APIError> {
         return apiClient.request()
     }

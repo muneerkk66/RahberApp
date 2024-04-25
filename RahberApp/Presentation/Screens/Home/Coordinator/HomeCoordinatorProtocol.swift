@@ -7,5 +7,5 @@
 
 @MainActor
 protocol HomeCoordinatorProtocol {
-    func showDetailView(name: String)
+    func showDetailView(course: Course)
 }

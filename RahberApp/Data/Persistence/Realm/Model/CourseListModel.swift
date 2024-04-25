@@ -12,7 +12,7 @@ public class CourseListModel: Object {
         self.userID = entity.userId
         self.name = entity.name
         self.surname = entity.surname
-        self.courses.append(objectsIn: entity.leaderboard.map(CourseModel.init))
+        self.courses.append(objectsIn: entity.courses.map(CourseModel.init))
     }
 
 }

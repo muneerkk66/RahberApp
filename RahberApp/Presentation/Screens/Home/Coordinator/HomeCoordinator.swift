@@ -9,14 +9,15 @@ import Foundation
 
 final class HomeCoordinator: Coordinator {
     enum Screen: Routable {
-        case details(String)
+        case details(Course)
+
     }
     @Published var navigationPath = [Screen]()
 
 }
 
 extension HomeCoordinator: HomeCoordinatorProtocol {
-    func showDetailView(name: String) {
-        navigationPath.append(.details(name))
+    func showDetailView(course: Course) {
+        navigationPath.append(.details(course))
     }
 }

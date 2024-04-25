@@ -46,6 +46,17 @@
 		0856EE222BDAB603005146FC /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE1F2BDAB603005146FC /* HomeCoordinator.swift */; };
 		0856EE232BDAB603005146FC /* HomeCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE202BDAB603005146FC /* HomeCoordinatorProtocol.swift */; };
 		0856EE242BDAB603005146FC /* HomeCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE212BDAB603005146FC /* HomeCoordinatorView.swift */; };
+		0856EE262BDAB7A5005146FC /* HomeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE252BDAB7A5005146FC /* HomeViewState.swift */; };
+		0856EE292BDABBFD005146FC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE282BDABBFD005146FC /* ErrorView.swift */; };
+		0856EE2B2BDABC4D005146FC /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0856EE2A2BDABC4D005146FC /* Localizable.xcstrings */; };
+		0856EE2E2BDABD13005146FC /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE2D2BDABD13005146FC /* CourseView.swift */; };
+		0856EE302BDABD82005146FC /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE2F2BDABD82005146FC /* Dimensions.swift */; };
+		0856EE322BDABED3005146FC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE312BDABED3005146FC /* String+Extension.swift */; };
+		0856EE352BDABF37005146FC /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0856EE342BDABF37005146FC /* NukeUI */; };
+		0856EE372BDABFDB005146FC /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE362BDABFDB005146FC /* PreviewData.swift */; };
+		0856EE392BDAC086005146FC /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE382BDAC086005146FC /* CourseListView.swift */; };
+		0856EE3B2BDAC49D005146FC /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE3A2BDAC49D005146FC /* CourseDetailView.swift */; };
+		0856EE3D2BDAC954005146FC /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 0856EE3C2BDAC954005146FC /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +116,15 @@
 		0856EE1F2BDAB603005146FC /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		0856EE202BDAB603005146FC /* HomeCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		0856EE212BDAB603005146FC /* HomeCoordinatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorView.swift; sourceTree = "<group>"; };
+		0856EE252BDAB7A5005146FC /* HomeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewState.swift; sourceTree = "<group>"; };
+		0856EE282BDABBFD005146FC /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		0856EE2A2BDABC4D005146FC /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		0856EE2D2BDABD13005146FC /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		0856EE2F2BDABD82005146FC /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
+		0856EE312BDABED3005146FC /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		0856EE362BDABFDB005146FC /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		0856EE382BDAC086005146FC /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
+		0856EE3A2BDAC49D005146FC /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +132,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0856EE352BDABF37005146FC /* NukeUI in Frameworks */,
 				0856EE002BDA9BF6005146FC /* RealmSwift in Frameworks */,
 				0856EDFE2BDA9BF6005146FC /* Realm in Frameworks */,
+				0856EE3D2BDAC954005146FC /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +311,7 @@
 		0856EDD22BDA8B64005146FC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0856EE272BDABBEB005146FC /* ReusableViews */,
 				0856EE162BDAB577005146FC /* AppCoordinator */,
 				0856EE0B2BDAB4CC005146FC /* Screens */,
 			);
@@ -309,6 +332,7 @@
 		0856EDD42BDA8B7C005146FC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0856EE2A2BDABC4D005146FC /* Localizable.xcstrings */,
 				0856EDE22BDA8C98005146FC /* mockData.json */,
 			);
 			path = Resources;
@@ -319,6 +343,9 @@
 			children = (
 				0856EDD62BDA8BBF005146FC /* Logger.swift */,
 				0856EDD82BDA8BD6005146FC /* Parser.swift */,
+				0856EE2F2BDABD82005146FC /* Dimensions.swift */,
+				0856EE312BDABED3005146FC /* String+Extension.swift */,
+				0856EE362BDABFDB005146FC /* PreviewData.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -379,6 +406,7 @@
 		0856EE0D2BDAB4DE005146FC /* CourseDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				0856EE3A2BDAC49D005146FC /* CourseDetailView.swift */,
 			);
 			path = CourseDetailView;
 			sourceTree = "<group>";
@@ -386,7 +414,9 @@
 		0856EE0E2BDAB510005146FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0856EE2C2BDABCEF005146FC /* Components */,
 				0856EE122BDAB545005146FC /* HomeView.swift */,
+				0856EE252BDAB7A5005146FC /* HomeViewState.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -420,6 +450,23 @@
 			path = AppCoordinator;
 			sourceTree = "<group>";
 		};
+		0856EE272BDABBEB005146FC /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE282BDABBFD005146FC /* ErrorView.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		0856EE2C2BDABCEF005146FC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE2D2BDABD13005146FC /* CourseView.swift */,
+				0856EE382BDAC086005146FC /* CourseListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -439,6 +486,8 @@
 			packageProductDependencies = (
 				0856EDFD2BDA9BF6005146FC /* Realm */,
 				0856EDFF2BDA9BF6005146FC /* RealmSwift */,
+				0856EE342BDABF37005146FC /* NukeUI */,
+				0856EE3C2BDAC954005146FC /* Swinject */,
 			);
 			productName = RahberApp;
 			productReference = 0856ED992BDA8936005146FC /* RahberApp.app */;
@@ -519,6 +568,7 @@
 				0856EDE42BDA8D3A005146FC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 				0856EDE72BDA8D4E005146FC /* XCRemoteSwiftPackageReference "Swinject" */,
 				0856EDFC2BDA9620005146FC /* XCRemoteSwiftPackageReference "realm-swift" */,
+				0856EE332BDABF37005146FC /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = 0856ED9A2BDA8936005146FC /* Products */;
 			projectDirPath = "";
@@ -538,6 +588,7 @@
 			files = (
 				0856EDE32BDA8C98005146FC /* mockData.json in Resources */,
 				0856EDA42BDA8937005146FC /* Preview Assets.xcassets in Resources */,
+				0856EE2B2BDABC4D005146FC /* Localizable.xcstrings in Resources */,
 				0856EDA12BDA8937005146FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,11 +616,14 @@
 			files = (
 				0856EDDD2BDA8C33005146FC /* AppEnvironment.swift in Sources */,
 				0856EDC92BDA8AC6005146FC /* Resolver.swift in Sources */,
+				0856EE3B2BDAC49D005146FC /* CourseDetailView.swift in Sources */,
 				0856EDF22BDA94D8005146FC /* CoursesLocalDataSource.swift in Sources */,
 				0856EE222BDAB603005146FC /* HomeCoordinator.swift in Sources */,
 				0856EE232BDAB603005146FC /* HomeCoordinatorProtocol.swift in Sources */,
 				0856EE082BDAB083005146FC /* Course+DomainMapper.swift in Sources */,
+				0856EE262BDAB7A5005146FC /* HomeViewState.swift in Sources */,
 				0856EDD92BDA8BD6005146FC /* Parser.swift in Sources */,
+				0856EE322BDABED3005146FC /* String+Extension.swift in Sources */,
 				0856EE1D2BDAB5A2005146FC /* AppCoordinator.swift in Sources */,
 				0856EDEF2BDA9425005146FC /* CourseRepository+Live.swift in Sources */,
 				0856ED9D2BDA8936005146FC /* RahberAppApp.swift in Sources */,
@@ -577,10 +631,12 @@
 				0856EDEB2BDA8E8E005146FC /* CourseService+Live.swift in Sources */,
 				0856EE242BDAB603005146FC /* HomeCoordinatorView.swift in Sources */,
 				0856EDED2BDA8F1B005146FC /* CoursesResponse.swift in Sources */,
+				0856EE292BDABBFD005146FC /* ErrorView.swift in Sources */,
 				0856EE062BDAAED7005146FC /* Course.swift in Sources */,
 				0856EE042BDAAE8F005146FC /* CourseList.swift in Sources */,
 				0856EDDB2BDA8C07005146FC /* APIError.swift in Sources */,
 				0856EE1E2BDAB5A2005146FC /* Routable.swift in Sources */,
+				0856EE302BDABD82005146FC /* Dimensions.swift in Sources */,
 				0856EDDF2BDA8C4C005146FC /* APIClientLive.swift in Sources */,
 				0856EDE92BDA8E69005146FC /* CourseService.swift in Sources */,
 				0856EDE12BDA8C60005146FC /* APIClient.swift in Sources */,
@@ -590,6 +646,9 @@
 				0856EE022BDA9D0C005146FC /* CourseRepository.swift in Sources */,
 				0856EDFB2BDA9581005146FC /* CourseListModel.swift in Sources */,
 				0856EE1B2BDAB5A2005146FC /* Coordinator.swift in Sources */,
+				0856EE2E2BDABD13005146FC /* CourseView.swift in Sources */,
+				0856EE372BDABFDB005146FC /* PreviewData.swift in Sources */,
+				0856EE392BDAC086005146FC /* CourseListView.swift in Sources */,
 				0856EE132BDAB545005146FC /* HomeView.swift in Sources */,
 				0856EE0A2BDAB46C005146FC /* FetchAllCoursesUseCase.swift in Sources */,
 				0856EE1C2BDAB5A2005146FC /* AppCoordinatorView.swift in Sources */,
@@ -942,6 +1001,14 @@
 				kind = branch;
 			};
 		};
+		0856EE332BDABF37005146FC /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -959,6 +1026,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0856EDFC2BDA9620005146FC /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		0856EE342BDABF37005146FC /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0856EE332BDABF37005146FC /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		0856EE3C2BDAC954005146FC /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0856EDE72BDA8D4E005146FC /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

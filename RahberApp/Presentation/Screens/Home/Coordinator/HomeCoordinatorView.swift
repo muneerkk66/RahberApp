@@ -22,8 +22,8 @@ struct HomeCoordinatorView: View {
     @ViewBuilder
     private func destination(_ screen: HomeCoordinator.Screen) -> some View {
         switch screen {
-        case .details(let name):
-            DetailView(name: name)
+        case .details(let course):
+            CourseDetailView(course: course)
         }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Swinject
 
 // Resolver is a singleton class that is responsible for injecting all dependencies in the app.
 final class Resolver {

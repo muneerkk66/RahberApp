@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct Course {
+struct Course: Hashable, Identifiable {
     let id: Int
     let name: String
     let duration: String

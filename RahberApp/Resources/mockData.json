@@ -4,9 +4,47 @@
     "surname": "Smith",
     "courses": [
         {
-            "id": 982479864239,
-            "name" : "Test",
+            "id": 982479864231,
+            "name" : "iOS App Development",
 			"duration" : "2 Hrs",
+			"url":"https://picsum.photos/id/8/200/200"
         },
+		{
+			"id": 982479864232,
+			"name" : "UI/UX Research",
+			"duration" : "1 Hrs",
+			"url":"https://picsum.photos/id/20/200/200"
+		},
+		{
+			"id": 982479864233,
+			"name" : "Environmental Studies",
+			"duration" : "1 Hrs",
+			"url":"https://picsum.photos/id/15/200/200"
+		},
+		{
+			"id": 982479864234,
+			"name" : "Relationship",
+			"duration" : "2:30 Hrs",
+			"url":"https://picsum.photos/id/32/200/200"
+		},
+		{
+			"id": 982479864235,
+			"name" : "Photography",
+			"duration" : "1 Hrs",
+			"url":"https://picsum.photos/id/91/200/200"
+		},
+		{
+			"id": 982479864236,
+			"name" : "Emotional Intelligence",
+			"duration" : "1 Hrs",
+			"url":"https://picsum.photos/id/22/200/200"
+		},
+		{
+			"id": 982479864237,
+			"name" : "Personal Development",
+			"duration" : "1 Hrs",
+			"url":"https://picsum.photos/id/64/200/200"
+		},
+
     ]
   }
