@@ -14,6 +14,15 @@
 		0856EDAE2BDA8937005146FC /* RahberAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDAD2BDA8937005146FC /* RahberAppTests.swift */; };
 		0856EDB82BDA8937005146FC /* RahberAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDB72BDA8937005146FC /* RahberAppUITests.swift */; };
 		0856EDBA2BDA8937005146FC /* RahberAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDB92BDA8937005146FC /* RahberAppUITestsLaunchTests.swift */; };
+		0856EDC92BDA8AC6005146FC /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDC82BDA8AC6005146FC /* Resolver.swift */; };
+		0856EDD72BDA8BBF005146FC /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDD62BDA8BBF005146FC /* Logger.swift */; };
+		0856EDD92BDA8BD6005146FC /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDD82BDA8BD6005146FC /* Parser.swift */; };
+		0856EDDB2BDA8C07005146FC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDDA2BDA8C07005146FC /* APIError.swift */; };
+		0856EDDD2BDA8C33005146FC /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDDC2BDA8C33005146FC /* AppEnvironment.swift */; };
+		0856EDDF2BDA8C4C005146FC /* APIClientLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDDE2BDA8C4C005146FC /* APIClientLive.swift */; };
+		0856EDE12BDA8C60005146FC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDE02BDA8C60005146FC /* APIClient.swift */; };
+		0856EDE32BDA8C98005146FC /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0856EDE22BDA8C98005146FC /* mockData.json */; };
+		0856EDE62BDA8D3A005146FC /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0856EDE52BDA8D3A005146FC /* SnapshotTesting */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,14 @@
 		0856EDB32BDA8937005146FC /* RahberAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RahberAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0856EDB72BDA8937005146FC /* RahberAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RahberAppUITests.swift; sourceTree = "<group>"; };
 		0856EDB92BDA8937005146FC /* RahberAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RahberAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0856EDC82BDA8AC6005146FC /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		0856EDD62BDA8BBF005146FC /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		0856EDD82BDA8BD6005146FC /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		0856EDDA2BDA8C07005146FC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		0856EDDC2BDA8C33005146FC /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		0856EDDE2BDA8C4C005146FC /* APIClientLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientLive.swift; sourceTree = "<group>"; };
+		0856EDE02BDA8C60005146FC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		0856EDE22BDA8C98005146FC /* mockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0856EDE62BDA8D3A005146FC /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +112,13 @@
 		0856ED9B2BDA8936005146FC /* RahberApp */ = {
 			isa = PBXGroup;
 			children = (
+				0856EDC62BDA8A86005146FC /* Application */,
+				0856EDCA2BDA8AF7005146FC /* Data */,
+				0856EDCE2BDA8B31005146FC /* Domain */,
+				0856EDD22BDA8B64005146FC /* Presentation */,
+				0856EDD32BDA8B74005146FC /* API */,
+				0856EDD42BDA8B7C005146FC /* Resources */,
+				0856EDD52BDA8B83005146FC /* Utils */,
 				0856ED9C2BDA8936005146FC /* RahberAppApp.swift */,
 				0856ED9E2BDA8936005146FC /* ContentView.swift */,
 				0856EDA02BDA8937005146FC /* Assets.xcassets */,
@@ -125,6 +150,119 @@
 				0856EDB92BDA8937005146FC /* RahberAppUITestsLaunchTests.swift */,
 			);
 			path = RahberAppUITests;
+			sourceTree = "<group>";
+		};
+		0856EDC62BDA8A86005146FC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDC72BDA8A9D005146FC /* DependencyInjection */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0856EDC72BDA8A9D005146FC /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDC82BDA8AC6005146FC /* Resolver.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		0856EDCA2BDA8AF7005146FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDCD2BDA8B1C005146FC /* Repositories */,
+				0856EDCC2BDA8B0A005146FC /* Network */,
+				0856EDCB2BDA8AFC005146FC /* Mapper */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0856EDCB2BDA8AFC005146FC /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		0856EDCC2BDA8B0A005146FC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0856EDCD2BDA8B1C005146FC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0856EDCE2BDA8B31005146FC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDD12BDA8B50005146FC /* UseCases */,
+				0856EDD02BDA8B41005146FC /* Entities */,
+				0856EDCF2BDA8B38005146FC /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0856EDCF2BDA8B38005146FC /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		0856EDD02BDA8B41005146FC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0856EDD12BDA8B50005146FC /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0856EDD22BDA8B64005146FC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0856EDD32BDA8B74005146FC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDDA2BDA8C07005146FC /* APIError.swift */,
+				0856EDDC2BDA8C33005146FC /* AppEnvironment.swift */,
+				0856EDDE2BDA8C4C005146FC /* APIClientLive.swift */,
+				0856EDE02BDA8C60005146FC /* APIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0856EDD42BDA8B7C005146FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDE22BDA8C98005146FC /* mockData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0856EDD52BDA8B83005146FC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0856EDD62BDA8BBF005146FC /* Logger.swift */,
+				0856EDD82BDA8BD6005146FC /* Parser.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +299,9 @@
 				0856EDAB2BDA8937005146FC /* PBXTargetDependency */,
 			);
 			name = RahberAppTests;
+			packageProductDependencies = (
+				0856EDE52BDA8D3A005146FC /* SnapshotTesting */,
+			);
 			productName = RahberAppTests;
 			productReference = 0856EDA92BDA8937005146FC /* RahberAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -215,6 +356,10 @@
 				Base,
 			);
 			mainGroup = 0856ED902BDA8935005146FC;
+			packageReferences = (
+				0856EDE42BDA8D3A005146FC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				0856EDE72BDA8D4E005146FC /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 0856ED9A2BDA8936005146FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0856EDE32BDA8C98005146FC /* mockData.json in Resources */,
 				0856EDA42BDA8937005146FC /* Preview Assets.xcassets in Resources */,
 				0856EDA12BDA8937005146FC /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +403,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0856EDDD2BDA8C33005146FC /* AppEnvironment.swift in Sources */,
+				0856EDC92BDA8AC6005146FC /* Resolver.swift in Sources */,
 				0856ED9F2BDA8936005146FC /* ContentView.swift in Sources */,
+				0856EDD92BDA8BD6005146FC /* Parser.swift in Sources */,
 				0856ED9D2BDA8936005146FC /* RahberAppApp.swift in Sources */,
+				0856EDD72BDA8BBF005146FC /* Logger.swift in Sources */,
+				0856EDDB2BDA8C07005146FC /* APIError.swift in Sources */,
+				0856EDDF2BDA8C4C005146FC /* APIClientLive.swift in Sources */,
+				0856EDE12BDA8C60005146FC /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +735,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0856EDE42BDA8D3A005146FC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.16.0;
+			};
+		};
+		0856EDE72BDA8D4E005146FC /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0856EDE52BDA8D3A005146FC /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0856EDE42BDA8D3A005146FC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0856ED912BDA8936005146FC /* Project object */;
 }

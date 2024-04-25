@@ -1,0 +1,12 @@
+{
+    "userId": 874897423,
+    "name": "Jeremy",
+    "surname": "Smith",
+    "courses": [
+        {
+            "id": 982479864239,
+            "name" : "Test",
+			"duration" : "2 Hrs",
+        },
+    ]
+  }
