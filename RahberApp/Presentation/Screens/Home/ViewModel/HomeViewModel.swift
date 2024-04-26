@@ -37,9 +37,6 @@ final class HomeViewModel: ObservableObject {
         case .onTapEnroll(let courseId):
             enroll(courseId: courseId)
         case .onTapProfile:
-            guard let user else {
-                return
-            }
             coordinator.showProfile()
 
         }
