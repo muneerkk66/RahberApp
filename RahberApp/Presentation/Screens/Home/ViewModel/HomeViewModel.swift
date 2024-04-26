@@ -13,7 +13,7 @@ import SwiftUI
 final class HomeViewModel: ObservableObject {
     private let coordinator: HomeCoordinatorProtocol
     private let fetchAllCoursesUseCase: FetchAllCoursesUseCase
-    private let sortPersonalisedCourseUseCase: SortPersonalisedCourseUseCaseLive
+    private let sortPersonalisedCourseUseCase: SortPersonalisedCourseUseCase
 
     @Published var courseList: [Course] = []
     @Published var user: User?
@@ -21,7 +21,7 @@ final class HomeViewModel: ObservableObject {
     @Published var viewState: HomeViewState = .idle
     private var disposables = Set<AnyCancellable>()
 
-    init(coordinator: HomeCoordinatorProtocol, fetchAllCoursesUseCase: FetchAllCoursesUseCase, sortPersonalisedCourseUseCase: SortPersonalisedCourseUseCaseLive) {
+    init(coordinator: HomeCoordinatorProtocol, fetchAllCoursesUseCase: FetchAllCoursesUseCase, sortPersonalisedCourseUseCase: SortPersonalisedCourseUseCase) {
         self.coordinator = coordinator
         self.fetchAllCoursesUseCase = fetchAllCoursesUseCase
         self.sortPersonalisedCourseUseCase = sortPersonalisedCourseUseCase
