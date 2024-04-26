@@ -8,4 +8,5 @@
 @MainActor
 protocol HomeCoordinatorProtocol {
     func showDetailView(course: Course)
+    func showProfile(user: User)
 }

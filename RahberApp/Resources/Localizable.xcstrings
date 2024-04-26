@@ -25,6 +25,21 @@
         }
       }
     },
+    "button.enrol" : {
+      "comment" : "Enrol Button Title",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enrol Now"
+          }
+        }
+      }
+    },
+    "course.lesson.title" : {
+
+    },
     "course.lessons" : {
       "comment" : "Lessons Count",
       "extractionState" : "manual",
@@ -37,9 +52,6 @@
         }
       }
     },
-    "Hello, World!" : {
-
-    },
     "host.latencyError" : {
       "comment" : "Latency error",
       "extractionState" : "manual",
@@ -48,6 +60,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Not Reachable"
+          }
+        }
+      }
+    },
+    "user.enrolled.courses" : {
+      "comment" : "User Enrolled Courses",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My Courses"
           }
         }
       }

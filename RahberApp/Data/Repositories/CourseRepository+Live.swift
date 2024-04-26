@@ -29,10 +29,12 @@ final class CourseRepositoryLive: CourseRepository {
             .fetchAllCourses()
             .map {[weak self] result -> CourseList in
                 let general = result.courses.map {$0.toGeneralCourseDomain()}
+
+                let user = result.toUserDomain()
                 // Save Data in DB
                 self?.saveAllCourses(response: result)
 
-                let list =  CourseList(general: general)
+                let list =  CourseList(user: user, general: general)
                 return list
 
             }.eraseToAnyPublisher()

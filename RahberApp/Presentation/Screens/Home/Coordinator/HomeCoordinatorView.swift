@@ -9,13 +9,14 @@ import SwiftUI
 
 struct HomeCoordinatorView: View {
     @ObservedObject private var coordinator: HomeCoordinator = Resolver.shared.resolve(HomeCoordinator.self)
-
+    @StateObject var viewModel: HomeViewModel = Resolver.shared.resolve(HomeViewModel.self)
     var body: some View {
         NavigationStack(path: $coordinator.navigationPath) {
-            HomeView()
+            HomeView().environmentObject(viewModel)
                 .navigationDestination(for: HomeCoordinator.Screen.self) {
                     destination($0)
-                }.navigationBarTitleDisplayMode(.inline)
+                }
+                .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .principal) {
                         Image(.logo)
@@ -25,14 +26,16 @@ struct HomeCoordinatorView: View {
                             .clipped()
                     }
                 }
-        }
+        }.accentColor(.primaryGreen)
     }
 
     @ViewBuilder
     private func destination(_ screen: HomeCoordinator.Screen) -> some View {
         switch screen {
         case .details(let course):
-            CourseDetailView(course: course)
+            CourseDetailView(course: course).environmentObject(viewModel)
+        case .profile:
+            ProfileView().environmentObject(viewModel)
         }
     }
 }

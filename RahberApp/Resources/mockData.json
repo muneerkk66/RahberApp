@@ -5,90 +5,108 @@
 	"courses": [
 		{
 			"courseId": 982479864231,
+			"category": 2,
 			"name": "Learn SwiftUI",
 			"tag": "Best Seller",
 			"duration": "4h 30 min",
 			"url": "https://picsum.photos/id/8/500/500",
-			"description": "SwiftUI is a user interface framework for building user interfaces for iOS, iPadOS, watchOS, tvOS, visionOS and macOS, developed by Apple Inc. for the Swift programming language.",
+			"description": "SwiftUI is a user interface framework for building user interfaces for iOS.",
 			"lessons": [
 				{
-					"title": "What is SwiftUI"
+					"title": "What is SwiftUI",
+					"id": 123234
 				},
 				{
-					"title": "What is state management"
+					"title": "What is state management",
+					"id": 12334
 				},
 				{
-					"title": "What is Observable"
-				}
-			]
-		},
-		{
-			"courseId": 982479864232,
-			"name": "UI/UX Research",
-			"duration": "3h 15 min",
-			"tag": "Free",
-			"description": "Discover the foundational principles of UI/UX research by learning how to identify and understand user needs. This lesson will explore various user research methods such as interviews, surveys, and user personas. We will delve into how to analyze user feedback to uncover pain points and desires that drive design decisions.",
-			"url": "https://picsum.photos/id/20/500/500",
-			"lessons": [
-				{
-					"title": "Understanding User Needs"
-				},
-				{
-					"title": "What is state management in swiftUI"
+					"title": "What is Observable",
+					"id": 143
 				}
 			]
 		},
 		{
 			"courseId": 982479864233,
+			"category": 3,
 			"name": "Environmental Studies",
 			"duration": "6h",
 			"tag": "Popular",
 			"url": "https://picsum.photos/id/15/500/500",
-			"description": "You will understand how to achieve economic, social, and environmental sustainability, use strategic frameworks for sustainable practices, engage in sustainability reporting, and consider stakeholder interests.",
+			"description": "You will understand how to achieve economic, social, and environmental sustainability, use strategic frameworks",
 			"lessons": [
 				{
-					"title": "Introduction To Business Sustainability"
+					"title": "Introduction To Business Sustainability",
+					"id": 130
 				},
 				{
-					"title": "Sustainability Plan Development"
+					"title": "Sustainability Plan Development",
+					"id": 129
 				}
 			]
 		},
 		{
 			"courseId": 982479864234,
+			"category": 1,
 			"name": "Relationship",
 			"duration": "30 min",
 			"tag": "Free",
 			"url": "https://picsum.photos/id/32/500/500",
-			"description": "You will understand the intricacies of interpersonal dynamics in this engaging lesson that breaks down the various stages of relationship development. We'll examine key theories of relationship formation, maintenance, and dissolution, providing insights into how relationships evolve over time.",
+			"description": "You will understand the intricacies of interpersonal dynamics in this engaging lesson that breaks down the various stages of relationship development.",
 			"lessons": [
 				{
-					"title": "Dynamics of Interpersonal Relationships"
+					"title": "Dynamics of Interpersonal Relationships",
+					"id": 128
 				},
 				{
-					"title": "Communication in Relationships"
+					"title": "Communication in Relationships",
+					"id": 127
 				},
 				{
-					"title": "The Psychology of Attachment"
+					"title": "The Psychology of Attachment",
+					"id": 126
 				}
 			]
 		},
 		{
 			"courseId": 982479864235,
+			"category": 2,
 			"name": "Photography",
 			"duration": "3h 15 min",
 			"tag": "Popular",
 			"url": "https://picsum.photos/id/91/500/500",
-			"description": "You will understand the intricacies of interpersonal dynamics in this engaging lesson that breaks down the various stages of relationship development. We'll examine key theories of relationship formation, maintenance, and dissolution, providing insights into how relationships evolve over time.",
+			"description": "You will understand the intricacies of interpersonal dynamics in this engaging lesson that breaks down the various stages of relationship development.",
 			"lessons": [
 				{
-					"title": "Mastering Light and Exposure"
+					"title": "Mastering Light and Exposure",
+					"id": 123
 				},
 				{
-					"title": "Post-Processing Techniques"
+					"title": "Post-Processing Techniques",
+					"id": 124
 				},
 				{
-					"title": "The Art of Composition in Photography"
+					"title": "The Art of Composition in Photography",
+					"id": 125
+				}
+			]
+		},
+		{
+			"courseId": 982479864232,
+			"category": 2,
+			"name": "UI/UX Research",
+			"duration": "3h 15 min",
+			"tag": "Free",
+			"description": "Discover the foundational principles of UI/UX research by learning how to identify and understand user needs.",
+			"url": "https://picsum.photos/id/20/500/500",
+			"lessons": [
+				{
+					"title": "Understanding User Needs",
+					"id": 145
+				},
+				{
+					"title": "What is state management in swiftUI",
+					"id": 132
 				}
 			]
 		}

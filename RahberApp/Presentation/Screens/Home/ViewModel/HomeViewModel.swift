@@ -13,14 +13,18 @@ import SwiftUI
 final class HomeViewModel: ObservableObject {
     private let coordinator: HomeCoordinatorProtocol
     private let fetchAllCoursesUseCase: FetchAllCoursesUseCase
+    private let sortPersonalisedCourseUseCase: SortPersonalisedCourseUseCaseLive
 
-    @Published var courseList: CourseList?
+    @Published var courseList: [Course] = []
+    @Published var user: User?
+    @Published var enrolledIds = Set<Int>()
     @Published var viewState: HomeViewState = .idle
     private var disposables = Set<AnyCancellable>()
 
-    init(coordinator: HomeCoordinatorProtocol, fetchAllCoursesUseCase: FetchAllCoursesUseCase) {
+    init(coordinator: HomeCoordinatorProtocol, fetchAllCoursesUseCase: FetchAllCoursesUseCase, sortPersonalisedCourseUseCase: SortPersonalisedCourseUseCaseLive) {
         self.coordinator = coordinator
         self.fetchAllCoursesUseCase = fetchAllCoursesUseCase
+        self.sortPersonalisedCourseUseCase = sortPersonalisedCourseUseCase
     }
 
     @MainActor
@@ -30,6 +34,14 @@ final class HomeViewModel: ObservableObject {
             fetchAllCourses()
         case .onTapCourse(let course):
             coordinator.showDetailView(course: course)
+        case .onTapEnroll(let courseId):
+            enroll(courseId: courseId)
+        case .onTapProfile:
+            guard let user else {
+                return
+            }
+            coordinator.showProfile(user: user)
+
         }
     }
 
@@ -50,8 +62,14 @@ final class HomeViewModel: ObservableObject {
                 }
             }, receiveValue: { [weak self] results in
                 guard let self = self else { return }
-                courseList = results
+                let values = sortPersonalisedCourseUseCase.execute(courses: results.general, enrolledIds: enrolledIds)
+                courseList = values
+                user = results.user
             })
             .store(in: &disposables)
+    }
+
+    func enroll(courseId: Int) {
+        enrolledIds.insert(courseId)
     }
 }

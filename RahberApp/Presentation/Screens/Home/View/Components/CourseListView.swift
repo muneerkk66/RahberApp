@@ -16,7 +16,7 @@ struct CourseListView: View {
             ScrollView {
 
                 LazyVStack(alignment: .leading, spacing: Dimensions.space20) {
-                    ForEach(viewModel.courseList?.general ?? []) { course in
+                    ForEach(viewModel.courseList) { course in
                         CourseView(course: course)
                             .onTapGesture {
                                 onTapLeader(course)

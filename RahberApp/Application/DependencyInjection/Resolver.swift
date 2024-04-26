@@ -110,6 +110,10 @@ extension Resolver {
             FetchAllCoursesUseCaseLive(courseRepository: resolver.resolve(CourseRepositoryLive.self)!)
         }.inObjectScope(.container)
 
+        container.register(SortPersonalisedCourseUseCaseLive.self) { _ in
+            SortPersonalisedCourseUseCaseLive()
+        }.inObjectScope(.container)
+
     }
 }
 
@@ -120,7 +124,7 @@ extension Resolver {
     @MainActor
     private func injectViewModels() {
         container.register(HomeViewModel.self) { resolver in
-            HomeViewModel(coordinator: resolver.resolve(HomeCoordinator.self)!, fetchAllCoursesUseCase: resolver.resolve(FetchAllCoursesUseCaseLive.self)!)
+            HomeViewModel(coordinator: resolver.resolve(HomeCoordinator.self)!, fetchAllCoursesUseCase: resolver.resolve(FetchAllCoursesUseCaseLive.self)!, sortPersonalisedCourseUseCase: resolver.resolve(SortPersonalisedCourseUseCaseLive.self)!)
         }
     }
 }

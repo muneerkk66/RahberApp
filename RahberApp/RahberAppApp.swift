@@ -11,7 +11,7 @@ import SwiftUI
 struct RahberAppApp: App {
 
     init() {
-        // Injecting all dependencies
+
         Resolver.shared.injectModules()
     }
 

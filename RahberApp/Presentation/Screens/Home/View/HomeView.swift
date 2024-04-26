@@ -8,20 +8,19 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject var viewModel: HomeViewModel = Resolver.shared.resolve(HomeViewModel.self)
-
+    @EnvironmentObject var viewModel: HomeViewModel
     var body: some View {
         sceneView.onAppear {
             viewModel.handle(.loadAllCourses)
         }.toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    // viewModel.handle(.onTapSorting)
+                    viewModel.handle(.onTapProfile)
                 } label: {
                     Image(systemName: "person").resizable() .foregroundColor(.primaryGreen).frame(width: 20, height: 20)
                 }
             }
-        }
+        }.environmentObject(viewModel)
     }
 
     // TODO: Based on the actual API integration, this feature should be updated to include a loader view.

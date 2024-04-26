@@ -8,8 +8,10 @@
 import Foundation
 enum HomeViewEvent {
     case onTapCourse(Course)
+    case onTapProfile
     case retryLoadAllCourses
     case loadAllCourses
+    case onTapEnroll(courseId: Int)
 }
 
 enum HomeViewState: Comparable {

@@ -7,5 +7,6 @@
 
 import Foundation
 struct CourseList {
-    let general: [Course]
+    var user: User
+    var general: [Course]
 }

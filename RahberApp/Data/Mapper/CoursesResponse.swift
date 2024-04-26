@@ -16,6 +16,7 @@ public struct CoursesResponse: Decodable {
 
 public struct CourseResponse: Decodable {
     var courseId: Int
+    var category: Int
     var name: String
     var url: String
     var duration: String
@@ -24,6 +25,7 @@ public struct CourseResponse: Decodable {
     var lessons: [Lesson]
 }
 
-public struct Lesson: Decodable {
+public struct Lesson: Decodable, Hashable {
+    var id: Int
     var title: String
 }
