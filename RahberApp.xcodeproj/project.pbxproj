@@ -64,6 +64,14 @@
 		0856EE472BDBAB1E005146FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE462BDBAB1E005146FC /* User.swift */; };
 		0856EE4A2BDBAC61005146FC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE492BDBAC61005146FC /* ProfileView.swift */; };
 		0856EE4D2BDBB5D3005146FC /* LessonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE4C2BDBB5D3005146FC /* LessonListView.swift */; };
+		0856EE512BDBB935005146FC /* CombinePublisherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE502BDBB935005146FC /* CombinePublisherTest.swift */; };
+		0856EE532BDBB943005146FC /* SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE522BDBB943005146FC /* SwiftUI.swift */; };
+		0856EE552BDBB970005146FC /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE542BDBB970005146FC /* MockAPIClient.swift */; };
+		0856EE572BDBB993005146FC /* MockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE562BDBB993005146FC /* MockResponse.swift */; };
+		0856EE592BDBBA4B005146FC /* MockFetchAllCoursesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE582BDBBA4B005146FC /* MockFetchAllCoursesUseCases.swift */; };
+		0856EE5B2BDBBAB7005146FC /* MockHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE5A2BDBBAB7005146FC /* MockHomeCoordinator.swift */; };
+		0856EE5D2BDBBAF8005146FC /* MockCourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE5C2BDBBAF8005146FC /* MockCourseService.swift */; };
+		0856EE5F2BDBBB92005146FC /* MockCoursesLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE5E2BDBBB92005146FC /* MockCoursesLocalDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +147,14 @@
 		0856EE462BDBAB1E005146FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0856EE492BDBAC61005146FC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		0856EE4C2BDBB5D3005146FC /* LessonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonListView.swift; sourceTree = "<group>"; };
+		0856EE502BDBB935005146FC /* CombinePublisherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinePublisherTest.swift; sourceTree = "<group>"; };
+		0856EE522BDBB943005146FC /* SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI.swift; sourceTree = "<group>"; };
+		0856EE542BDBB970005146FC /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		0856EE562BDBB993005146FC /* MockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
+		0856EE582BDBBA4B005146FC /* MockFetchAllCoursesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchAllCoursesUseCases.swift; sourceTree = "<group>"; };
+		0856EE5A2BDBBAB7005146FC /* MockHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeCoordinator.swift; sourceTree = "<group>"; };
+		0856EE5C2BDBBAF8005146FC /* MockCourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCourseService.swift; sourceTree = "<group>"; };
+		0856EE5E2BDBBB92005146FC /* MockCoursesLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoursesLocalDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +235,8 @@
 		0856EDAC2BDA8937005146FC /* RahberAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				0856EE4F2BDBB91A005146FC /* Utils */,
+				0856EE4E2BDBB912005146FC /* Mocks */,
 				0856EDAD2BDA8937005146FC /* RahberAppTests.swift */,
 			);
 			path = RahberAppTests;
@@ -504,6 +522,28 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		0856EE4E2BDBB912005146FC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE542BDBB970005146FC /* MockAPIClient.swift */,
+				0856EE562BDBB993005146FC /* MockResponse.swift */,
+				0856EE582BDBBA4B005146FC /* MockFetchAllCoursesUseCases.swift */,
+				0856EE5A2BDBBAB7005146FC /* MockHomeCoordinator.swift */,
+				0856EE5C2BDBBAF8005146FC /* MockCourseService.swift */,
+				0856EE5E2BDBBB92005146FC /* MockCoursesLocalDataSource.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0856EE4F2BDBB91A005146FC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE502BDBB935005146FC /* CombinePublisherTest.swift */,
+				0856EE522BDBB943005146FC /* SwiftUI.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -704,7 +744,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0856EE532BDBB943005146FC /* SwiftUI.swift in Sources */,
+				0856EE592BDBBA4B005146FC /* MockFetchAllCoursesUseCases.swift in Sources */,
+				0856EE572BDBB993005146FC /* MockResponse.swift in Sources */,
+				0856EE552BDBB970005146FC /* MockAPIClient.swift in Sources */,
+				0856EE512BDBB935005146FC /* CombinePublisherTest.swift in Sources */,
 				0856EDAE2BDA8937005146FC /* RahberAppTests.swift in Sources */,
+				0856EE5D2BDBBAF8005146FC /* MockCourseService.swift in Sources */,
+				0856EE5B2BDBBAB7005146FC /* MockHomeCoordinator.swift in Sources */,
+				0856EE5F2BDBBB92005146FC /* MockCoursesLocalDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
