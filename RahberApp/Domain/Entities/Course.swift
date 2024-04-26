@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: this should be defined in backend
 enum CourseCategory: Int {
     case general = 1
     case technology = 2

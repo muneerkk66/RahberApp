@@ -9,7 +9,7 @@
 			"name": "Learn SwiftUI",
 			"tag": "Best Seller",
 			"duration": "4h 30 min",
-			"url": "https://picsum.photos/id/8/500/500",
+			"url": "https://picsum.photos/id/180/500/500",
 			"description": "SwiftUI is a user interface framework for building user interfaces for iOS.",
 			"lessons": [
 				{
@@ -51,7 +51,7 @@
 			"name": "Relationship",
 			"duration": "30 min",
 			"tag": "Free",
-			"url": "https://picsum.photos/id/32/500/500",
+			"url": "https://picsum.photos/id/129/500/500",
 			"description": "You will understand the intricacies of interpersonal dynamics in this engaging lesson that breaks down the various stages of relationship development.",
 			"lessons": [
 				{
@@ -74,7 +74,7 @@
 			"name": "Photography",
 			"duration": "3h 15 min",
 			"tag": "Popular",
-			"url": "https://picsum.photos/id/91/500/500",
+			"url": "https://picsum.photos/id/250/500/500",
 			"description": "You will understand the intricacies of interpersonal dynamics in this engaging lesson that breaks down the various stages of relationship development.",
 			"lessons": [
 				{
@@ -98,7 +98,7 @@
 			"duration": "3h 15 min",
 			"tag": "Free",
 			"description": "Discover the foundational principles of UI/UX research by learning how to identify and understand user needs.",
-			"url": "https://picsum.photos/id/20/500/500",
+			"url": "https://picsum.photos/id/370/500/500",
 			"lessons": [
 				{
 					"title": "Understanding User Needs",

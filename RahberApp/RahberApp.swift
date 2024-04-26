@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct RahberAppApp: App {
+struct RahberApp: App {
 
     init() {
 
@@ -17,7 +17,9 @@ struct RahberAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            AppCoordinatorView()
+            AppCoordinatorView().onAppear {
+                NetworkMonitor.shared.startMonitoring()
+            }
         }
     }
 }

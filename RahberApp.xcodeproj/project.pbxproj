@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0856ED9D2BDA8936005146FC /* RahberAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856ED9C2BDA8936005146FC /* RahberAppApp.swift */; };
+		0856ED9D2BDA8936005146FC /* RahberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856ED9C2BDA8936005146FC /* RahberApp.swift */; };
 		0856EDA12BDA8937005146FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0856EDA02BDA8937005146FC /* Assets.xcassets */; };
 		0856EDA42BDA8937005146FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0856EDA32BDA8937005146FC /* Preview Assets.xcassets */; };
 		0856EDAE2BDA8937005146FC /* RahberAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EDAD2BDA8937005146FC /* RahberAppTests.swift */; };
@@ -76,6 +76,8 @@
 		0856EE632BDBC0AE005146FC /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE622BDBC0AE005146FC /* HomeViewModelTests.swift */; };
 		0856EE652BDBC1F6005146FC /* CourseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE642BDBC1F6005146FC /* CourseServiceTests.swift */; };
 		0856EE672BDBC76E005146FC /* CourseRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE662BDBC76E005146FC /* CourseRepositoryTests.swift */; };
+		0856EE692BDBCCDC005146FC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0856EE682BDBCCDC005146FC /* README.md */; };
+		0856EE6B2BDBD5FC005146FC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE6A2BDBD5FC005146FC /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +99,7 @@
 
 /* Begin PBXFileReference section */
 		0856ED992BDA8936005146FC /* RahberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RahberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0856ED9C2BDA8936005146FC /* RahberAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RahberAppApp.swift; sourceTree = "<group>"; };
+		0856ED9C2BDA8936005146FC /* RahberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RahberApp.swift; sourceTree = "<group>"; };
 		0856EDA02BDA8937005146FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0856EDA32BDA8937005146FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0856EDA92BDA8937005146FC /* RahberAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RahberAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,8 @@
 		0856EE622BDBC0AE005146FC /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		0856EE642BDBC1F6005146FC /* CourseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseServiceTests.swift; sourceTree = "<group>"; };
 		0856EE662BDBC76E005146FC /* CourseRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRepositoryTests.swift; sourceTree = "<group>"; };
+		0856EE682BDBCCDC005146FC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0856EE6A2BDBD5FC005146FC /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,7 @@
 		0856ED902BDA8935005146FC = {
 			isa = PBXGroup;
 			children = (
+				0856EE682BDBCCDC005146FC /* README.md */,
 				0856ED9B2BDA8936005146FC /* RahberApp */,
 				0856EDAC2BDA8937005146FC /* RahberAppTests */,
 				0856EDB62BDA8937005146FC /* RahberAppUITests */,
@@ -225,7 +230,7 @@
 				0856EDD32BDA8B74005146FC /* API */,
 				0856EDD42BDA8B7C005146FC /* Resources */,
 				0856EDD52BDA8B83005146FC /* Utils */,
-				0856ED9C2BDA8936005146FC /* RahberAppApp.swift */,
+				0856ED9C2BDA8936005146FC /* RahberApp.swift */,
 				0856EDA02BDA8937005146FC /* Assets.xcassets */,
 				0856EDA22BDA8937005146FC /* Preview Content */,
 			);
@@ -391,6 +396,7 @@
 				0856EE2F2BDABD82005146FC /* Dimensions.swift */,
 				0856EE312BDABED3005146FC /* String+Extension.swift */,
 				0856EE362BDABFDB005146FC /* PreviewData.swift */,
+				0856EE6A2BDBD5FC005146FC /* NetworkMonitor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -687,6 +693,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0856EE692BDBCCDC005146FC /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,7 +725,7 @@
 				0856EE322BDABED3005146FC /* String+Extension.swift in Sources */,
 				0856EE1D2BDAB5A2005146FC /* AppCoordinator.swift in Sources */,
 				0856EDEF2BDA9425005146FC /* CourseRepository+Live.swift in Sources */,
-				0856ED9D2BDA8936005146FC /* RahberAppApp.swift in Sources */,
+				0856ED9D2BDA8936005146FC /* RahberApp.swift in Sources */,
 				0856EDD72BDA8BBF005146FC /* Logger.swift in Sources */,
 				0856EDEB2BDA8E8E005146FC /* CourseService+Live.swift in Sources */,
 				0856EE242BDAB603005146FC /* HomeCoordinatorView.swift in Sources */,
@@ -749,6 +756,7 @@
 				0856EE0A2BDAB46C005146FC /* FetchAllCoursesUseCase.swift in Sources */,
 				0856EE1C2BDAB5A2005146FC /* AppCoordinatorView.swift in Sources */,
 				0856EE472BDBAB1E005146FC /* User.swift in Sources */,
+				0856EE6B2BDBD5FC005146FC /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -931,6 +939,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -959,6 +968,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
