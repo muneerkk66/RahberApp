@@ -63,6 +63,7 @@
 		0856EE452BDB9F5F005146FC /* SortPersonalisedCourseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE442BDB9F5F005146FC /* SortPersonalisedCourseUseCase.swift */; };
 		0856EE472BDBAB1E005146FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE462BDBAB1E005146FC /* User.swift */; };
 		0856EE4A2BDBAC61005146FC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE492BDBAC61005146FC /* ProfileView.swift */; };
+		0856EE4D2BDBB5D3005146FC /* LessonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856EE4C2BDBB5D3005146FC /* LessonListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		0856EE442BDB9F5F005146FC /* SortPersonalisedCourseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortPersonalisedCourseUseCase.swift; sourceTree = "<group>"; };
 		0856EE462BDBAB1E005146FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0856EE492BDBAC61005146FC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0856EE4C2BDBB5D3005146FC /* LessonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +423,7 @@
 		0856EE0D2BDAB4DE005146FC /* CourseDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				0856EE4B2BDBB5B9005146FC /* Components */,
 				0856EE3A2BDAC49D005146FC /* CourseDetailView.swift */,
 			);
 			path = CourseDetailView;
@@ -491,6 +494,14 @@
 				0856EE492BDBAC61005146FC /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		0856EE4B2BDBB5B9005146FC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0856EE4C2BDBB5D3005146FC /* LessonListView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -641,6 +652,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0856EE4D2BDBB5D3005146FC /* LessonListView.swift in Sources */,
 				0856EDDD2BDA8C33005146FC /* AppEnvironment.swift in Sources */,
 				0856EDC92BDA8AC6005146FC /* Resolver.swift in Sources */,
 				0856EE3B2BDAC49D005146FC /* CourseDetailView.swift in Sources */,

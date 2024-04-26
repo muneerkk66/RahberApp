@@ -26,22 +26,22 @@ struct PrimaryButtonView: View {
         Button {
             action()
         } label: {
-            HStack(spacing: 8) {
+            HStack(spacing: Dimensions.space8) {
                 if let icon {
                     Image(systemName: icon)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 28, height: 28)
+                        .frame(width: Dimensions.space28, height: Dimensions.space28)
                 }
                 Text(LocalizedStringKey(label))
             }
             .font(.title2.bold())
-            .padding(.vertical, 12)
+            .padding(.vertical, Dimensions.space12)
             .foregroundColor(Color.white)
-            .frame(maxWidth: .infinity, maxHeight: 50)
+            .frame(maxWidth: .infinity, maxHeight: Dimensions.space50)
             .background {
                 LinearGradient(gradient: Gradient(colors: [Color.primaryGreen, Color.green]), startPoint: .bottomLeading, endPoint: .topTrailing)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .clipShape(RoundedRectangle(cornerRadius: Dimensions.space20))
 
             }
         }

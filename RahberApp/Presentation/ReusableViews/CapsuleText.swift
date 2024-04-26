@@ -12,9 +12,9 @@ struct CapsuleText: View {
 
     var body: some View {
         Text(text)
-            .frame(minWidth: 80)
+            .frame(minWidth: Dimensions.space80)
             .font(.headline)
-            .padding(5)
+            .padding(Dimensions.space4)
             .foregroundStyle(.white)
             .background(.primaryGreen)
             .clipShape(.capsule)

@@ -38,7 +38,15 @@
       }
     },
     "course.lesson.title" : {
-
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lessons"
+          }
+        }
+      }
     },
     "course.lessons" : {
       "comment" : "Lessons Count",

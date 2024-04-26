@@ -28,7 +28,7 @@ final class HomeViewModel: ObservableObject {
     }
 
     @MainActor
-    func handle(_ event: HomeViewEvent) {
+    public func handle(_ event: HomeViewEvent) {
         switch event {
         case .loadAllCourses, .retryLoadAllCourses:
             fetchAllCourses()
@@ -40,7 +40,7 @@ final class HomeViewModel: ObservableObject {
             guard let user else {
                 return
             }
-            coordinator.showProfile(user: user)
+            coordinator.showProfile()
 
         }
     }
@@ -49,6 +49,7 @@ final class HomeViewModel: ObservableObject {
         viewState = .isLoading
         fetchAllCoursesUseCase
             .execute()
+            .subscribe(on: DispatchQueue.global())
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] value in
                 guard let self = self else { return }

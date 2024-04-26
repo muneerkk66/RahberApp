@@ -23,7 +23,7 @@ struct ErrorView: View {
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.blue)
-                    .cornerRadius(8)
+                    .cornerRadius(Dimensions.space8)
             }
         }
         .padding()

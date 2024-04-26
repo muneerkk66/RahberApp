@@ -17,7 +17,7 @@ struct HomeView: View {
                 Button {
                     viewModel.handle(.onTapProfile)
                 } label: {
-                    Image(systemName: "person").resizable() .foregroundColor(.primaryGreen).frame(width: 20, height: 20)
+                    Image(systemName: "person").resizable() .foregroundColor(.primaryGreen).frame(width: Dimensions.space20, height: Dimensions.space20)
                 }
             }
         }.environmentObject(viewModel)

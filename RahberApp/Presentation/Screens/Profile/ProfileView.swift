@@ -11,14 +11,13 @@ struct ProfileView: View {
     @EnvironmentObject private var viewModel: HomeViewModel
     var body: some View {
         VStack {
-            Image(systemName: "person").resizable().foregroundColor(.primaryGreen).frame(width: 80, height: 80)
-            Text(viewModel.user?.fullName() ?? "")
-
+            Image(systemName: "person").resizable().foregroundColor(.primaryGreen).frame(width: Dimensions.space80, height: Dimensions.space80)
+            Text((viewModel.user?.fullName()).orEmpty)
             List {
                 Section(header: Text("user.enrolled.courses")) {
                     ForEach(viewModel.courseList.filter {$0.isEnrolled(courseIds: viewModel.enrolledIds)}, id: \.id) { course in
                         HStack {
-                            Image(systemName: "doc.on.doc").resizable() .foregroundColor(.primaryGreen).frame(width: 30, height: 30)
+                            Image(systemName: "doc.on.doc").resizable() .foregroundColor(.primaryGreen).frame(width: Dimensions.space30, height: Dimensions.space30)
 
                             Text(course.name)
                                 .font(.subheadline)

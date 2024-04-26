@@ -12,7 +12,7 @@ struct StickyHeader<Content: View>: View {
     var minHeight: CGFloat
     var content: Content
 
-    init(minHeight: CGFloat = 200, @ViewBuilder content: () -> Content) {
+    init(minHeight: CGFloat = Dimensions.space100, @ViewBuilder content: () -> Content) {
         self.minHeight = minHeight
         self.content = content()
     }

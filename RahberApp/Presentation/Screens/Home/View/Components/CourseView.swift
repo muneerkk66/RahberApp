@@ -11,15 +11,12 @@ import NukeUI
 
 struct CourseView: View {
     let course: Course?
-
     var body: some View {
 
         ZStack(alignment: .topTrailing) {
-
             VStack(alignment: .leading) {
                 header
                 footer
-
             }
             .frame(height: Dimensions.cardViewHight)
             .foregroundColor(.white)
@@ -33,7 +30,8 @@ struct CourseView: View {
             .cornerRadius(Dimensions.space16)
             .shadow(color: .gray, radius: Dimensions.space4, x: 0, y: Dimensions.space2)
             .padding(.horizontal, Dimensions.space20)
-            CapsuleText(text: (course?.tag).orEmpty).padding(.horizontal, 30).padding(.top, 10)
+
+            CapsuleText(text: (course?.tag).orEmpty).padding(.horizontal, Dimensions.space30).padding(.top, Dimensions.space10)
         }
     }
 
@@ -42,9 +40,9 @@ struct CourseView: View {
     private var header: some View {
         GeometryReader { geometry in
             LazyImage(url: URL(string: (course?.imageUrl).orEmpty))
-                .aspectRatio(contentMode: .fill) // Fill the aspect ratio of the image
+                .aspectRatio(contentMode: .fill)
                 .frame(width: geometry.size.width, height: geometry.size.height)
-                .clipped() // Clip the overflowing parts
+                .clipped()
         }
 
     }
@@ -52,27 +50,29 @@ struct CourseView: View {
     @ViewBuilder
     private var footer: some View {
         VStack(alignment: .leading) {
-            Text((course?.name).orEmpty)
-                .font(.title2)
-                .fontWeight(.medium)
-                .foregroundColor(.black)
+            title
             subtitle
-        }.frame(height: 50)
+        }.frame(height: Dimensions.space50)
         .padding()
+    }
+
+    private var title: some View {
+        Text((course?.name).orEmpty)
+            .font(.title2)
+            .fontWeight(.medium)
+            .foregroundColor(.black)
     }
 
     @ViewBuilder
     private var subtitle: some View {
         HStack(alignment: .center) {
-            Image(systemName: "doc.on.doc").resizable() .foregroundColor(.primaryGreen).frame(width: 20, height: 20)
+            Image(systemName: "doc.on.doc").resizable() .foregroundColor(.primaryGreen).frame(width: Dimensions.space20, height: Dimensions.space20)
             Text((course?.getLessonCountTitle()).orEmpty)
                 .font(.subheadline)
                 .fontWeight(.medium)
                 .foregroundColor(.gray)
-
             Spacer()
-
-            Image(systemName: "clock").resizable() .foregroundColor(.primaryGreen).frame(width: 20, height: 20)
+            Image(systemName: "clock").resizable() .foregroundColor(.primaryGreen).frame(width: Dimensions.space20, height: Dimensions.space20)
             Text((course?.duration).orEmpty)
                 .font(.subheadline)
                 .fontWeight(.medium)

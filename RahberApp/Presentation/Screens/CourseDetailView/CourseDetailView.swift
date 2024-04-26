@@ -13,12 +13,12 @@ struct CourseDetailView: View {
     let course: Course
     var body: some View {
         GeometryReader { proxy in
-            VStack(spacing: 0) {
+            VStack {
                 ScrollView(.vertical, showsIndicators: false) {
                     LazyVStack(alignment: .leading) {
                         headerView
                         detailView
-                        LeaderBoardView(course: course).frame(width: proxy.size.width, height: proxy.size.height)
+                        LessonListView(course: course).frame(width: proxy.size.width, height: proxy.size.height)
                     }
                 }
                 .background(Color(UIColor.secondarySystemBackground))
@@ -26,7 +26,7 @@ struct CourseDetailView: View {
                 if !course.isEnrolled(courseIds: viewModel.enrolledIds) {
                     PrimaryButtonView(label: "button.enrol") {
                         viewModel.handle(.onTapEnroll(courseId: course.id))
-                    }.padding(.horizontal, 20)
+                    }.padding(.horizontal, Dimensions.space20)
                     .frame(maxWidth: .infinity)
                 }
 
@@ -39,13 +39,12 @@ struct CourseDetailView: View {
     private var headerView: some View {
         StickyHeader {
             LazyImage(url: URL(string: course.imageUrl))
-                .aspectRatio(contentMode: .fit) // Fill the aspect ratio of the image
+                .aspectRatio(contentMode: .fit)
                 .clipped()
                 .overlay( VStack {
                     LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .center, endPoint: .bottom)
-
                 }
-                .frame(maxWidth: .infinity), // Ensures the overlay stretches across the bottom
+                .frame(maxWidth: .infinity),
                 alignment: .bottom )
         }
     }
@@ -59,19 +58,19 @@ struct CourseDetailView: View {
                 .foregroundColor(.white)
             subtitle
             description
-        }.padding(.horizontal, 20).offset(y: -20)
+        }.padding(.horizontal, Dimensions.space20).offset(y: -Dimensions.space20)
     }
 
     @ViewBuilder
     private var subtitle: some View {
         HStack(alignment: .bottom) {
-            Image(systemName: "doc.on.doc").resizable() .foregroundColor(.white).frame(width: 20, height: 20)
+            Image(systemName: "doc.on.doc").resizable() .foregroundColor(.white).frame(width: Dimensions.space20, height: Dimensions.space20)
             Text(course.getLessonCountTitle())
                 .font(.subheadline)
                 .fontWeight(.medium)
                 .foregroundColor(.white)
 
-            Image(systemName: "clock").resizable() .foregroundColor(.white).frame(width: 20, height: 20)
+            Image(systemName: "clock").resizable() .foregroundColor(.white).frame(width: Dimensions.space20, height: Dimensions.space20)
             Text(course.duration)
                 .font(.subheadline)
                 .fontWeight(.medium)
@@ -94,27 +93,4 @@ struct CourseDetailView: View {
 
 #Preview {
     CourseDetailView(course: PreviewData.course)
-}
-
-struct LeaderBoardView: View {
-    let course: Course
-
-    var body: some View {
-        List {
-            Section(header: Text("course.lesson.title")) {
-                ForEach(course.lessons, id: \.id) { lesson in
-                    HStack {
-                        Image(systemName: "play.circle").resizable() .foregroundColor(.primaryGreen).frame(width: 30, height: 30)
-
-                        Text(lesson.title)
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                            .foregroundColor(.black)
-                    }
-
-                }
-            }
-
-        }
-    }
 }

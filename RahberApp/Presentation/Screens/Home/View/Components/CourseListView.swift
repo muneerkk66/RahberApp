@@ -14,7 +14,6 @@ struct CourseListView: View {
     var body: some View {
         GeometryReader { _ in
             ScrollView {
-
                 LazyVStack(alignment: .leading, spacing: Dimensions.space20) {
                     ForEach(viewModel.courseList) { course in
                         CourseView(course: course)
@@ -27,7 +26,6 @@ struct CourseListView: View {
             .scrollContentBackground(.hidden)
             .background(Color(UIColor.secondarySystemBackground))
         }
-
     }
 }
 
